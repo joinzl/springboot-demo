@@ -14,7 +14,7 @@ public class HelloController {
     @Value("${server.port}")
     private String port;
 
-    @RequestMapping("/hello")
+    @RequestMapping("/")
     public String index() {
         String msg = "端口号："+port;
         return msg;
